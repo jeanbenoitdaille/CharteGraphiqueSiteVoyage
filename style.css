@@ -1,0 +1,60 @@
+*::selection {
+    background-color: rgba(134, 183, 31, 0.2);
+}
+
+body {
+    font-family: Calibri, sans-serif;
+    font-size: 14px;
+}
+
+nav > ul.menu > li {
+    display: inline;
+    list-style: none;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: Tahoma, sans-serif;
+}
+
+nav > ul.menu > li > a {
+    text-decoration: none;
+    color: #B9482B;
+}
+
+nav > ul.menu > li > a:hover {
+    text-decoration: underline;
+}
+
+nav > ul.menu > li > a:visited {
+    text-decoration: underline;
+    color: darkred;
+}
+
+nav > ul.menu > li:first-child::after {
+    content: "\0020 \2302";
+}
+
+h1 {
+    color: #BC8E14
+}
+
+h2, h3, h4 {
+    color: #729E0E;
+}
+
+article > h2::before {
+    content: "\2708"
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+section > p {
+    padding: 10px;
+    border: 1px solid gray;
+}
+
+p:not(.description):not(.information) {
+    font-style: italic;
+}
